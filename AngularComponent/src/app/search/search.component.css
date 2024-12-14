@@ -1,0 +1,28 @@
+.search-div {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Vertically centers items */
+    gap: 8px; /* Adds spacing between the span and input */
+    padding: 10px; /* Adds padding around the container */
+    background-color: #f9f9f9; /* Light background for the container */
+    border: 1px solid #ddd; /* Subtle border around the container */
+    border-radius: 5px; /* Rounds the corners */
+}
+
+.search-div span {
+    font-size: 14px; /* Adjust the text size */
+    color: #333; /* Dark gray text color */
+}
+
+.search-div input[type="text"] {
+    flex-grow: 1; /* Makes the input take remaining space */
+    padding: 5px; /* Adds padding inside the input */
+    border: 1px solid #ccc; /* Border around the input */
+    border-radius: 3px; /* Rounds the corners of the input */
+    font-size: 14px; /* Adjusts text size in the input */
+}
+
+.search-div input[type="text"]:focus {
+    border-color: #007bff; /* Highlight border when focused */
+    outline: none; /* Removes default outline */
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5); /* Adds a slight shadow */
+}

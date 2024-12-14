@@ -1,0 +1,32 @@
+<div class="product-list">
+  <h2>Product List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Name</th>
+        <th>Color</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Stock</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.color }}</td>
+        <td [ngStyle]="{
+            'color': product.price > 500 ? 'red' : 'green',
+            'background-color': product.price > 500 ? 'lightgray' : 'lightgreen'
+          }">
+          ${{ product.price.toFixed(2) }}
+        </td>
+        <td>{{ product.category }}</td>
+        <td>{{ product.description }}</td>
+        <td>{{ product.stock }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,56 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Site name styling */
+  .site-name {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .site-name h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Navigation styles */
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff; /* White background */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  nav a:hover {
+    color: #4CAF50; /* Green color on hover */
+    border-bottom: 2px solid #4CAF50; /* Underline effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+    }
+  
+    nav a {
+      margin: 10px 5px;
+    }
+  }
+  
