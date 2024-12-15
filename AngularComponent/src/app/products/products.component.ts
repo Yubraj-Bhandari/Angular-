@@ -11,7 +11,7 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-   products = [
+  products = [
     {
       id: 1,
       name: 'Smartphone',
@@ -19,7 +19,8 @@ export class ProductsComponent implements OnInit {
       price: 699.99,
       category: 'Electronics',
       description: 'A high-end smartphone with a 6.5-inch display and 128GB storage.',
-      stock: 50
+      stock: 50,
+      availability: 'Available'
     },
     {
       id: 2,
@@ -28,7 +29,8 @@ export class ProductsComponent implements OnInit {
       price: 1200.00,
       category: 'Computers',
       description: 'A powerful laptop with a 15-inch display and Intel i7 processor.',
-      stock: 30
+      stock: 0,
+      availability: 'Not Available'
     },
     {
       id: 3,
@@ -37,7 +39,8 @@ export class ProductsComponent implements OnInit {
       price: 199.99,
       category: 'Audio',
       description: 'Noise-cancelling over-ear headphones with Bluetooth connectivity.',
-      stock: 100
+      stock: 100,
+      availability: 'Available'
     },
     {
       id: 4,
@@ -46,7 +49,8 @@ export class ProductsComponent implements OnInit {
       price: 249.99,
       category: 'Wearables',
       description: 'A fitness tracker smartwatch with heart rate monitor and GPS.',
-      stock: 75
+      stock: 0,
+      availability: 'Not Available'
     },
     {
       id: 5,
@@ -55,7 +59,8 @@ export class ProductsComponent implements OnInit {
       price: 399.99,
       category: 'Electronics',
       description: 'A 10-inch tablet with 64GB storage and a high-resolution display.',
-      stock: 40
+      stock: 40,
+      availability: 'Available'
     }
   ];
   

@@ -11,7 +11,7 @@ export class SearchComponent implements OnInit {
 
   ngOnInit(): void {
   }
-searchValue:string='hello world';
+searchValue:string='';
 changeSearchValue(eventData:Event){
   this.searchValue=((<HTMLInputElement>eventData.target).value);
 
